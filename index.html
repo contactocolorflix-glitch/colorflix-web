@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Colorflix: remodelaciones integrales, reparaciones, modificaciones y pintura profesional para hogares y locales.">
+  <meta name="theme-color" content="#f5f1e8">
+  <title>Colorflix | Remodelación que transforma espacios</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Colorflix, volver al inicio"><img src="logo-transparent.png" alt="Colorfix Logo" class="logo-img"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menú</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegación principal">
+      <a class="nav-link active" href="#inicio">Inicio</a>
+      <a class="nav-link" href="#nosotros">Quiénes somos</a>
+      <a class="nav-link" href="#servicios">Servicios</a>
+      <a class="nav-link" href="#trabajos">Trabajos realizados</a>
+      <a class="nav-link" href="#cotizar">Cotizar / presupuesto</a>
+      <a class="nav-link" href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Remodelación integral · Santiago y alrededores</p>
+        <h1>Tu espacio,<br><em>tu nueva historia.</em></h1>
+        <p class="hero-text">Transformamos hogares y locales con remodelaciones completas, reparaciones precisas y terminaciones que hacen que cada espacio se sienta tuyo.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cotizar">Quiero cotizar <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#trabajos">Ver nuestros trabajos <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-proof"><strong>+10 años</strong><span>creando espacios<br>que inspiran</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Interior renovado por Colorflix">
+        <div class="hero-image"></div>
+        <div class="paint-card"><span class="paint-dot"></span><span>Color del mes</span><strong>Terracota suave</strong><small>#C98168</small></div>
+        <span class="scribble" aria-hidden="true">✳</span>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about section section-light">
+      <div class="section-label">01 — Quiénes somos</div>
+      <div class="about-grid">
+        <h2>El color correcto<br>cambia <em>todo.</em></h2>
+        <div class="about-copy">
+          <p class="lead">Somos un equipo de pintores especialistas que cree que renovar un espacio también es renovar cómo te sientes en él.</p>
+          <p>En Colorflix nos ocupamos de cada detalle: desde la planificación y obra gruesa hasta la pintura, el montaje y la última terminación. Coordinamos especialistas, trabajamos limpio y entregamos espacios listos para disfrutar.</p>
+          <a class="text-link dark" href="#cotizar">Conoce nuestro proceso <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="values">
+        <div><span class="value-number">01</span><strong>Asesoría real</strong><p>Te ayudamos a elegir colores que sí funcionan en tu espacio.</p></div>
+        <div><span class="value-number">02</span><strong>Trabajo limpio</strong><p>Protegemos tus muebles y entregamos todo impecable.</p></div>
+        <div><span class="value-number">03</span><strong>Acabado experto</strong><p>Materiales de calidad y manos que conocen su oficio.</p></div>
+      </div>
+    </section>
+
+    <section id="servicios" class="services section">
+      <div class="section-heading"><div><div class="section-label">02 — Nuestros servicios</div><h2>Mucho más que<br><em>pintura.</em></h2></div><p>Soluciones completas para renovar tu casa, departamento o local sin complicaciones.</p></div>
+      <div class="service-grid">
+        <article class="service-card"><span>01</span><h3>Remodelaciones integrales</h3><p>Diseñamos y coordinamos transformaciones completas de cocinas, baños, living y locales.</p><a href="#cotizar">Ver servicio ↗</a></article>
+        <article class="service-card"><span>02</span><h3>Reparaciones y modificaciones</h3><p>Redistribuciones, tabiques, cielos, pisos, instalaciones y arreglos para mejorar tu espacio.</p><a href="#cotizar">Ver servicio ↗</a></article>
+        <article class="service-card"><span>03</span><h3>Pintura profesional</h3><p>Preparación de superficies, interiores, fachadas y renovación de muebles con acabado experto.</p><a href="#cotizar">Ver servicio ↗</a></article>
+        <article class="service-card"><span>04</span><h3>Acabados interiores y exteriores</h3><p>Guardapolvos, molduras, revestimientos y detalles que elevan el resultado final.</p><a href="#cotizar">Ver servicio ↗</a></article>
+      </div>
+    </section>
+
+    <section id="trabajos" class="work section">
+      <div class="section-heading">
+        <div><div class="section-label">03 — Trabajos realizados</div><h2>Ideas en<br><em>acción.</em></h2></div>
+        <p>Una selección de proyectos donde cada pared encontró su personalidad.</p>
+      </div>
+      <div id="gallery" class="gallery" aria-live="polite"></div>
+      <button id="load-more" class="button button-outline" type="button">Ver más proyectos <span aria-hidden="true">↗</span></button>
+    </section>
+
+    <section id="simulador" class="simulator section section-dark">
+      <div class="section-heading">
+        <div><div class="section-label">04 — Encuentra tu estilo</div><h2>Imagina antes<br>de <em>construir.</em></h2></div>
+        <p>Prueba una paleta en una habitación 3D o carga una foto de tu propio espacio.</p>
+      </div>
+      <div class="simulator-tabs" role="tablist" aria-label="Herramientas de color">
+        <button class="sim-tab active" data-tab="room" role="tab" aria-selected="true">Habitación 3D</button>
+        <button class="sim-tab" data-tab="photo" role="tab" aria-selected="false">Mi propia foto</button>
+      </div>
+      <div id="room-tool" class="tool-panel active" role="tabpanel">
+        <div id="three-container" class="three-container"><div class="lazy-placeholder"><span class="loader-dot"></span><p>El simulador se carga al entrar en esta sección</p><button id="start-simulator" class="button button-light" type="button">Abrir simulador 3D</button></div></div>
+        <div class="sim-controls"><div id="palette" class="palette" aria-label="Paleta de colores"></div><select id="brand" aria-label="Marca de pintura"><option value="sipa">SIPA (aprox.)</option><option value="ceresita">Ceresita (aprox.)</option></select><button id="reset-colors" class="control-button" type="button">Restablecer</button></div>
+        <p class="tool-hint">Haz clic en una pared para aplicar el color. Arrastra para rotar.</p>
+      </div>
+      <div id="photo-tool" class="tool-panel photo-tool" role="tabpanel" hidden>
+        <label class="upload-box" for="photo-upload"><span class="upload-icon">＋</span><strong>Sube una foto de tu espacio</strong><small>JPG o PNG · máximo 10 MB</small></label>
+        <input id="photo-upload" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="photo-preview-wrap" class="photo-preview-wrap" hidden><canvas id="photo-canvas"></canvas><div class="photo-controls"><label for="photo-color">Color de prueba</label><input id="photo-color" type="color" value="#c98168"><button id="photo-whatsapp" class="button button-primary" type="button">Cotizar este diseño <span aria-hidden="true">↗</span></button></div></div>
+      </div>
+    </section>
+
+    <section id="cotizar" class="quote section section-light">
+      <div class="quote-intro"><div class="section-label">04 — Cotizar / presupuesto</div><h2>Hablemos de<br>tu <em>proyecto.</em></h2><p>Cuéntanos qué tienes en mente. Te responderemos con una cotización clara y sin compromiso.</p><div class="quote-note"><span>✦</span> Respuesta en menos de 24 horas hábiles</div></div>
+      <form id="quote-form" class="quote-form">
+        <div class="form-row"><label>Nombre completo<input name="name" type="text" placeholder="Tu nombre" required></label><label>WhatsApp o teléfono<input name="phone" type="tel" placeholder="+56 9..." required></label></div>
+        <label>¿Qué servicio necesitas?<select name="service" required><option value="" disabled selected>Selecciona una opción</option><option>Remodelación completa</option><option>Pintura de espacios</option><option>Modificaciones particulares</option><option>Reparaciones y terminaciones</option><option>Remodelación de local comercial</option></select></label>
+        <div class="form-row"><label>Metros cuadrados aproximados<input name="meters" type="number" min="1" placeholder="Ej: 65"></label><label>Comuna<input name="location" type="text" placeholder="Ej: Ñuñoa"></label></div>
+        <label>Cuéntanos un poco más<textarea name="message" rows="3" placeholder="¿Qué espacios quieres renovar?"></textarea></label>
+        <button class="button button-primary button-wide" type="submit">Solicitar mi cotización <span aria-hidden="true">↗</span></button>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section id="contacto" class="contact section">
+      <div class="contact-copy"><div class="section-label">05 — Contacto</div><h2>¿Listo para<br><em>cambiar?</em></h2><p>Escríbenos y convierte esa idea que tienes en un espacio que te encante habitar.</p></div>
+      <div class="contact-details"><a href="mailto:contacto.colorflix@gamil.com"><small>Correo</small>contacto.colorflix@gamil.com <span>↗</span></a><a href="https://wa.me/56956079469" target="_blank" rel="noopener"><small>WhatsApp</small>+56 9 5607 9469 <span>↗</span></a></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#inicio"><img src="logo-transparent.png" alt="Colorfix Logo" class="logo-img"></a><p>Espacios que se sienten.</p><span>© <span id="year"></span> Colorflix</span></footer>
+  <a class="whatsapp-float" href="https://wa.me/56956079469?text=Hola%20Colorflix%2C%20quiero%20cotizar%20una%20remodelaci%C3%B3n%20o%20proyecto%20para%20mi%20espacio." target="_blank" rel="noopener" aria-label="Contactar a Colorflix por WhatsApp"><span aria-hidden="true"><svg viewBox="0 0 24 24" width="23" height="23" fill="currentColor"><path d="M20.5 3.5A11.7 11.7 0 0 0 12.17 0C5.7 0 .43 5.27.43 11.74c0 2.07.54 4.09 1.57 5.87L.33 23.9l6.43-1.64a11.7 11.7 0 0 0 5.4 1.3h.01c6.47 0 11.73-5.27 11.73-11.74 0-3.14-1.22-6.09-3.4-8.32Zm-8.33 18.06h-.01a9.77 9.77 0 0 1-4.98-1.36l-.36-.21-3.82.98 1.02-3.72-.23-.38a9.76 9.76 0 0 1-1.5-5.13c0-5.34 4.35-9.69 9.7-9.69 2.59 0 5.02 1.01 6.85 2.84a9.66 9.66 0 0 1 2.84 6.87c0 5.34-4.35 9.7-9.71 9.7Zm5.32-7.26c-.29-.15-1.7-.84-1.97-.93-.26-.1-.45-.15-.64.15-.19.29-.73.93-.9 1.12-.16.2-.33.22-.61.08-.29-.15-1.21-.45-2.3-1.43-.85-.76-1.43-1.7-1.6-1.99-.17-.29-.02-.45.13-.6.13-.13.29-.33.43-.49.15-.17.19-.29.29-.48.1-.2.05-.37-.02-.52-.07-.15-.64-1.55-.88-2.12-.24-.56-.47-.49-.64-.5h-.55c-.2 0-.52.08-.79.37-.27.29-1.03 1.01-1.03 2.47s1.06 2.86 1.21 3.05c.15.2 2.08 3.18 5.04 4.46.7.3 1.25.49 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.7-.7 1.94-1.37.24-.67.24-1.24.17-1.37-.07-.12-.26-.2-.55-.34Z"/></svg></span><b>¿Hablamos?</b></a>
+  <script src="script.js" defer></script>
+</body>
+</html>
